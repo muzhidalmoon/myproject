@@ -43,7 +43,7 @@
 
 
     function validName($name){
-        if(!preg_match("/[0-9]/",$name) && !empty($name)){
+        if(!preg_match("/[0-9]/",$name) && !empty($name) && preg_match("/^[a-zA-Z ]*$/",$name){
           return true;
         }else{
           return false;
